@@ -1,0 +1,152 @@
+body {
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background: linear-gradient(#fa7328, #ee9f15);
+    color: #ffffff;
+    padding: 10px;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+  }
+  
+  nav li, nav li a {
+    margin-right: 20px;
+  }
+  
+  nav li:first-child {
+    margin-left: 2%;
+    margin-right: auto;
+  }
+  
+  nav li:last-child {
+    margin-right: 2%;
+    margin-left: auto; 
+  }
+  
+  nav li, nav li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  nav li:hover {
+    text-decoration: underline;
+  }
+  
+  #close-student{
+    cursor: pointer;
+    font-size: 20px;
+  }
+  
+  .Add-student-container {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: 50%;
+    margin: 2vh auto;
+    padding: 20px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    background-color: #dddddd;
+    display: none;
+    flex-direction: column;
+  }
+  
+  .Add-student-container h1{
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 28px;
+  }
+  
+  .Add-student-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .Add-student-container label {
+    font-weight: bold;
+  }
+  
+  .Add-student-container input {
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+  }
+  
+  .Add-student-container button {
+    padding: 10px 20px;
+    background-color: #fa7328;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .Add-student-container button:hover {
+    background-color: #ee9f15;
+  }
+  
+  
+#close-interview{
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.Create-interview-container {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  width: 50%;
+  margin: 2vh auto;
+  padding: 20px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  background-color: #dddddd;
+  display: none;
+  flex-direction: column;
+}
+
+.Create-interview-container h1{
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+.Create-interview-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.Create-interview-container label {
+  font-weight: bold;
+}
+
+.Create-interview-container input {
+  padding: 10px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+}
+
+.Create-interview-container button {
+  padding: 10px 20px;
+  background-color: #fa7328;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.Create-interview-container button:hover {
+  background-color: #ee9f15;
+}

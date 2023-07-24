@@ -1,0 +1,96 @@
+body {
+    font-family: "Open Sans", Arial, sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+  }
+  
+ 
+#interview-detail {
+  background-color: #dddddd;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: #f96b24 0px 5px 15px;
+  max-width: 400px;
+  margin: 10px auto;
+}
+
+#interview-detail h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+#interview-detail span {
+  font-size: 16px;
+  color: #555;
+  display: block;
+}
+
+
+  #not-registered-student,
+  #registered-student {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 800px;
+    margin: 20px auto;
+  }
+
+  #not-registered-student h2,
+  #registered-student h2{
+    margin-left: 15px;
+  }
+  
+  .checkbox-container,
+  .radio-container {
+    font-size: 1.2rem;
+    padding: 15px;
+    background-color: #dddddd;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    flex: 1;
+  }
+  
+  .input-field {
+    width: auto;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+    background-color: white;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  input[type="checkbox"],
+  input[type="radio"] {
+    margin-right: 5px;
+  }
+  
+  label {
+    font-size: 14px;
+  }
+  
+  button {
+    background-image: linear-gradient(90deg,#f96b24 0%,#ff9100 100%);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+  
+  button:hover {
+    background-image: linear-gradient(90deg,#ff9100 0%,#f96b24 100%);
+  }
+  
+  button:focus {
+    outline: none;
+  }
+  
+  button:active {
+    background-image: linear-gradient(90deg,#ff9100 0%,#f96b24 100%);
+  }
+  

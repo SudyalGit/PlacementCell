@@ -1,0 +1,56 @@
+<link rel="stylesheet" href="/css/dashboard.css">
+
+<div class="lists-container">
+    <div class="list-box">
+        <h2>Students</h2>
+        <ul class="list">
+
+            <% locals.students.forEach(student => { %>
+
+            <li>
+                <details>
+                    <summary>
+                        <%= student.name %>  <span class="status"><%= student.status %></span>
+                    </summary>
+                    <ul>
+                        <li><span>Name: <%= student.name %></span></li>
+                        <li><span>Email: <%= student.email %></span></li>
+                        <li><span>Batch: <%= student.batch %></span></li>
+                        <li><span>College: <%= student.college %></span></li>
+                        <li><span>Status: <%= student.status %></span></li>
+                        <li><span>DSA: <%= student.scores.dsa %></span></li>
+                        <li><span>WebDevelopment: <%= student.scores.webd %></span></li>
+                        <li><span>React: <%= student.scores.react %></span></li>
+                    </ul>
+                </details>
+            </li>
+
+            <% }) %>
+
+        </ul>
+    </div>
+
+    <div class="list-box">
+        <h2>Interviews</h2>
+        <ul class="list">
+
+            <% locals.interviews.forEach(interview => { %>
+
+            <li>
+                <details>
+                    <summary>
+                        <a href="/employee/dashboard/interview/<%= interview.id %>">
+                            <%= interview.company %>  <span><%= interview.date_of_visit.toLocaleDateString() %></span>
+                        </a>
+                    </summary>
+                </details>
+            </li>
+
+            <% }) %>
+
+        </ul>
+    </div>
+</div>
+
+
+<script src="/js/dashboard.js"></script>

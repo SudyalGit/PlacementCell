@@ -1,0 +1,82 @@
+<header>
+    <nav>
+        <ul class="nav-links">
+            <li id="dashboard"><a href="/employee/dashboard">Dashboard</a></li>
+            <li id="add-student">Add Student</li>
+            <li id="add-interview">Add Interview</li>
+            <li id="download"><a href="/employee/dashboard/download">Download</a></li>
+            <li id="signout"><a href="/employee/signout">SignOut</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div id="Add-student-container" class="Add-student-container">
+    <span id="close-student"><i class="fa-solid fa-xmark"></i></span>
+    <h1>Create Student</h1>
+    <form action="/employee/dashboard/create-student" method="post">
+            <label for="name">Student name</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Student email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="batch">Batch</label>
+            <input type="text" id="batch" name="batch" required>
+
+            <label for="college">College name</label>
+            <input type="text" id="college" name="college" required>
+            
+            <label for="dsa">DSA</label>
+            <input type="number" id="dsa" name="dsa" required>
+
+            <label for="webd">Web Development</label>
+            <input type="number" id="webd" name="webd" required>
+
+            <label for="react">React</label>
+            <input type="number" id="react" name="react" required>
+            
+            <button type="submit">Add Student</button>
+    </form>
+</div>
+
+<div id="Create-interview-container" class="Create-interview-container">
+    <span id="close-interview"><i class="fa-solid fa-xmark"></i></span>
+    <h1>Create Interview</h1>
+
+    <form action="/employee/dashboard/create-interview" method="post">
+        <label for="company">Company name</label>
+        <input type="text" id="company" name="company" required>
+        
+        <label for="date_of_visit">Date of visit</label>
+        <input type="date" id="date_of_visit" name="date_of_visit" required>
+
+        <button type="submit">Add Interview</button>
+    </form>
+
+
+</div>
+
+<script>
+    const addStudentContainer = document.getElementById('Add-student-container');
+    const createInterviewContainer = document.getElementById('Create-interview-container');
+
+    document.getElementById('add-student').addEventListener("click", function(){
+        addStudentContainer.style.display = 'flex';
+        createInterviewContainer.style.display = 'none';
+    });
+
+    document.getElementById('close-student').addEventListener('click', function(){
+        addStudentContainer.style.display = 'none';
+    })
+
+    document.getElementById('add-interview').addEventListener("click", function(){
+        createInterviewContainer.style.display = 'flex';
+        addStudentContainer.style.display = 'none';
+    });
+
+    document.getElementById('close-interview').addEventListener('click', function(){
+        createInterviewContainer.style.display = 'none';
+    })
+
+
+</script>
