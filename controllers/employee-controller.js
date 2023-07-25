@@ -32,7 +32,7 @@ module.exports.createEmployee = async function(req, res){
         return res.redirect('back');
     }
     req.flash('success', 'Account created successfully, Login to continue.')
-    return res.redirect('/employee/login');
+    return res.redirect('/employee/signin');
 }
 
 module.exports.createSession = function(req, res){
