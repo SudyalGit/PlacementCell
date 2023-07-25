@@ -27,7 +27,7 @@ app.use(session({
     resave: false,
 
     store: MongoStore.create({
-        mongoUrl: 'mongodb://127.0.0.1:27017/placement_cell_db',
+        mongoUrl: 'mongodb+srv://placement:1UbhMXi13RXuCwSn@cluster0.p5gbb.mongodb.net/myDBplacementcell?retryWrites=true&w=majority',
         mongoOptions: {
             useNewUrlParser: true,
             useUnifiedTopology: true,
