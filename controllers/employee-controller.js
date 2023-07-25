@@ -48,5 +48,5 @@ module.exports.destroySession = function(req, res){
         }
     });
     req.flash('success', 'You Logged Out!');
-    res.redirect('/employee/login');
+    res.redirect('/employee/signin');
 }
